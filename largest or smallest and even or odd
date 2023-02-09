@@ -1,0 +1,54 @@
+#include <stdio.h>
+void main()
+{
+    int a, b, c, large, small;
+    printf("Enter three numbers : \n");
+    scanf("%d%d%d", &a, &b, &c);
+    if (a > b && a > c)
+    {
+        printf("\n%d is largest", a);
+        large = a;
+    }
+    else if (b > c)
+    {
+        printf("\n%d is largest", b);
+        large = b;
+    }
+    else
+    {
+        printf("\n%d is largest", c);
+        large = c;
+    }
+    if (a < b && a < c)
+    {
+        printf("\n%d is smallest", a);
+        small = a;
+    }
+    else if (b < c)
+    {
+        printf("\n%d is smallest", b);
+        small = b;
+    }
+    else
+    {
+        printf("\n%d is smallest", c);
+        small = b;
+    }
+    if (large % 2 == 0)
+    {
+        printf("\n %d is even", large);
+    }
+    else
+    {
+        printf("\n %d is odd", large);
+    }
+    if (small % 2 == 0)
+    {
+        printf("\n %d is even", small);
+    }
+    else
+    {
+        printf("\n %d is odd", small);
+    }
+    return 0;
+}
