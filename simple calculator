@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+	int x,y;
+	printf("enter two integers");
+	scanf("%d%d",&x,&y);
+	int choice;
+	printf("enter the choice");
+	scanf("%d",&choice);
+	switch(choice)
+	{
+		case 1:x^y;
+		printf("%d",x^y);
+		break;
+		case 2:x+y;
+		printf("%d",x+y);
+		break;
+		case 3:x-y;
+		printf("%d",x-y);
+		break;
+		case 4:x*y;
+		printf("%d",x*y);
+		break;
+		case 5:x/y;
+		printf("%d",x/y);
+		break;
+		default:
+			printf("invalid input");
+			break;
+	}
+	return 0;
+}
